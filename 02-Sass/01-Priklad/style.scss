@@ -1,8 +1,26 @@
 
-$cervena: red;
-$title-size: 30px ;
+$primary: rgb(173, 21, 21); 
+$active: rgb(221, 143, 34);
+$title-size: 50px;
+$font: Verdana, Geneva, Tahoma, sans-serif;
+$margins: 10px auto 20px auto;
+$spacer: 30px;
 
 h1{
-    color: $cervena;   //komentar
+    color: $primary;   //komentar
     font-size: $title-size;
+    font-family: $font;
+    margin: $margins;
 }
+button{
+    background-color: $active;
+    color: aliceblue;
+    padding: $spacer / 2;
+    border: 0;
+    border-radius: 12px;
+}
+p{
+    font-size: $title-size / 3; //nemůžu míchat jedntky (v calc ano)
+}
+
+//i v css jsou proměnné, ale počítají se až při zobrazování v prohlížeči
